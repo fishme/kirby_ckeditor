@@ -41,6 +41,8 @@ How to call the ckeditor inside your blueprint file?
 That was it. :)
 
 To see the editor click inside the Textarea field.
+![Image of Yaktocat](http://www.fishme.de/github/kirby2_ckeditor.png)
+
 
 ###update/change ckeditor
 
