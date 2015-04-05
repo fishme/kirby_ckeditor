@@ -1,0 +1,8 @@
+.cke_textarea_inline
+{
+    padding: 10px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #8dae28;
+    background-color: #ffffff;
+}
