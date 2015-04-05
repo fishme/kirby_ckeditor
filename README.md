@@ -1,11 +1,12 @@
 # Kirby2 ckeditor
 
 ##Description
-This the WYSIWYG Editor for Kirby2.
+This is the WYSIWYG Editor for Kirby2.
+I used the powerful <http://ckeditor.com/> for this plugin.
 
 ##How to use?
 
-clone inside your project /site/fields/
+clone inside your project /site/fields/ (maybe rename directory to "ckeditor")
 
 ```bash
 git clone https://github.com/fishme/kirby_ckeditor.git
@@ -13,7 +14,7 @@ git clone https://github.com/fishme/kirby_ckeditor.git
 or download/paste 
 
 Still now I did't fix the problem with the .htaccess. 
-That everything is working you have to turnoff the rule for the site inside the .htaccess
+That everything is working you have to turnoff the rule for the site inside the .htaccess (maybe you will have then a security issue, but don't worry I will find a way "in the future")
 
 ```bash
 # block all files in the site folder from being accessed directly
@@ -41,6 +42,9 @@ That was it. :)
 
 To see the editor click inside the Textarea field.
 
+###update/change ckeditor
+
+If you want to change the setup from the ckeditor go to the page <http://ckeditor.com/download> and choose "customize". After the easy setup download the package directly inside /site/ckeditor/assets/js/
 
 ##Why?
 I know that Kirby2 works with Markdown and I like that. But in some cases it is necessary to have a simple Visual Editor for HTML Code.
