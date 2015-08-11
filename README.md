@@ -14,7 +14,7 @@ git clone https://github.com/fishme/kirby_ckeditor.git
 or download/paste 
 
 Still now I did't fix the problem with the .htaccess. 
-That everything is working you have to turnoff the rule for the site inside the .htaccess (maybe you will have then a security issue, but don't worry I will find a way "in the future")
+That everything is working, you have to turnoff the rule for the site inside the .htaccess (maybe you will have then a security issue, but don't worry I will find a way "in the future")
 
 ```bash
 # block all files in the site folder from being accessed directly
