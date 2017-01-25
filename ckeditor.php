@@ -2,7 +2,7 @@
 /**
  * CKEditor Field for Kirby 2
  *
- * @version   1.0.0
+ * @version   1.0.1
  * @author    David Hohl <david.hohl@gmail.com>
  * @copyright David Hohl <david.hohl@gmail.com>
  * @license   GNU GPL v3.0 <http://opensource.org/licenses/GPL-3.0>
@@ -47,7 +47,7 @@ class ckeditorField extends InputField {
         // Set up wrapping element
         $wrapper = new Brick('div', false);
         $wrapper->append($input);
-        $wrapper->append('<script src="'.str_replace('panel','',$_SERVER['HTTP_REFERER']) . '/site/fields/ckeditor/assets/js/ckeditor.js"></script><script>CKEDITOR.inline( "'.$this->name().'" );</script>');
+        $wrapper->append('<script src="'.str_replace('/panel/index.php','',$_SERVER['SCRIPT_NAME']) . '/site/fields/ckeditor/assets/js/ckeditor.js"></script><script>CKEDITOR.inline( "'.$this->name().'" );</script>');
         return $wrapper;
     }
 
