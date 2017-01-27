@@ -12,22 +12,17 @@ git clone https://github.com/fishme/kirby_ckeditor.git
 ```
 or download/paste 
 
-Still now I did't fix the problem with the .htaccess. 
-That everything is working you have to turnoff the rule for the site inside the .htaccess
+* clone or download/paste the repo
+* add 2 rules in your .htaccess (see below)
+* done
+
+open your .htaccess file and add these two lines before "RewriteRule ^site/(.*) index.php [L]"
 
 ```bash
-# block all files in the site folder from being accessed directly
-#RewriteRule ^site/(.*) error [R=301,L]
+RewriteRule ^assets/fields/([a-zA-Z0-9\.\-_%=]+)/(.*)$ site/fields/$1/assets/$2 [L,N]
+RewriteCond $1 !^fields/[a-zA-Z0-9\.\-_%=]+/assets/.*
+RewriteRule ^site/(.*) index.php [L]
 ```
-what I need here is an exception for this url
-"/site/fields/ckeditor/assets/*"
-If you can fix that, please make a pullrequest.
-
-so back to the description.
-
-* clone or download/paste the repo
-* comment the site rule from the .htaccess
-* done
 
 How to call the ckeditor inside your blueprint file?
 
@@ -51,8 +46,6 @@ there are some todos :)
 * remove Kirby2 Listener on the textarea field
 * markdown should works (still now not everything is working)
 * better configuration for the ckeditor
-* code refactor (etc: fix url)
-* find a solution for the .htaccess problem
 
 ##Feedback
 go to my page <http://www.fishme.de>
