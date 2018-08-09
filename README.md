@@ -59,6 +59,3 @@ there are some todos :)
 * better configuration for the ckeditor
 * code refactor (etc: fix url)
 * find a solution for the .htaccess problem
-
-##Feedback
-go to my page <http://www.fishme.de>
